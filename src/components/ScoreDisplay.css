@@ -1,0 +1,37 @@
+.score-display {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #00ff00;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  text-shadow: 
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #00ff00;
+  border-radius: 4px;
+  animation: glow 3s ease-in-out infinite alternate;  /* Slowed from 1.5s to 3s */
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 0 3px #00ff00;  /* Reduced from 5px */
+  }
+  to {
+    text-shadow: 
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 0 12px #00ff00;  /* Reduced from 20px */
+  }
+}
